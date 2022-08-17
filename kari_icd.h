@@ -2,7 +2,7 @@
 typedef struct
 {
     uint64_t timestamp;    // nsec, ros
-    uint64_t t_sec;           // board time
+    float64 t_sec;           // board time
 
     float32 delt_sec;
 
@@ -35,7 +35,7 @@ typedef struct
 typedef struct
 {
     uint64_t timestamp;    // nsec, ros
-    uint64_t t_sec;
+    float64 t_sec;
 
     float64 lat_deg;
     float64 lon_deg;
@@ -70,7 +70,7 @@ typedef struct
 typedef struct
 {
     uint64_t timestamp;
-    uint64_t t_sec;
+    float64 t_sec;
 
     float32 lat_deg;
     float32 lon_deg;
@@ -97,7 +97,7 @@ typedef struct
 typedef struct
 {
     uint64_t timestamp;
-    uint64_t t_sec;
+    float64 t_sec;
 
     float32 rsv1;
     float32 rsv2;
@@ -107,4 +107,6 @@ typedef struct
     float32 rsv6;
 
 } SKariOpticExt;
+
+
 
