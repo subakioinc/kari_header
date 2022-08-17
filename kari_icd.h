@@ -1,8 +1,8 @@
 
 typedef struct
 {
-    float64_k timestamp;    // nsec, ros
-    float64_k t_sec;           // board time
+    uint64_t timestamp;    // nsec, ros
+    uint64_t t_sec;           // board time
 
     float32_k delt_sec;
 
@@ -34,8 +34,8 @@ typedef struct
 
 typedef struct
 {
-    float64_k timestamp;    // nsec, ros
-    float64_k t_sec;
+    uint64_t timestamp;    // nsec, ros
+    uint64_t t_sec;
 
     float64_k lat_deg;
     float64_k lon_deg;
@@ -69,8 +69,8 @@ typedef struct
 
 typedef struct
 {
-    float64_k timestamp;
-    float64_k t_sec;
+    uint64_t timestamp;
+    uint64_t t_sec;
 
     float32_k lat_deg;
     float32_k lon_deg;
@@ -96,8 +96,8 @@ typedef struct
 
 typedef struct
 {
-    float64_k timestamp;
-    float64_k t_sec;
+    uint64_t timestamp;
+    uint64_t t_sec;
 
     float32_k rsv1;
     float32_k rsv2;
