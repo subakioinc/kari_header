@@ -1,6 +1,14 @@
 
 typedef struct
 {
+    uint8_t fs0; //0xAA
+    uint8_t fs1; //0x44
+    uint8_t len; 
+    uint8_t checksum;
+} Header;
+
+typedef struct
+{
     uint64_t timestamp;    // nsec, ros
     float64 t_sec;           // board time
 
@@ -31,6 +39,11 @@ typedef struct
 
 } SOpticBoardOut;
 
+typedef struct
+{
+    Header _header;
+    SOpticBoardOut _opticboardout;
+} SopticBoardOutPacket;
 
 typedef struct
 {
