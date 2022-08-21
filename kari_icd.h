@@ -1,3 +1,7 @@
+#include <stdint.h>
+
+typedef float float32;
+typedef double float64;
 
 typedef struct
 {
